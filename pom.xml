@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>golan2</groupId>
+    <artifactId>spark-k-mean-simple</artifactId>
+    <version>1.0</version>
+
+
+    <properties>
+        <spark.version>2.2.1</spark.version>
+        <scala.version>2.11.8</scala.version>
+        <scala.logging.version>3.5.0</scala.logging.version>
+        <spark.jetty.version>9.3.20.v20170531</spark.jetty.version>
+        <spark.slf4j-api.version>1.7.16</spark.slf4j-api.version>
+        <dse.version>6.0.0</dse.version>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_2.11</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jason-goodwin</groupId>
+            <artifactId>better-monads</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
